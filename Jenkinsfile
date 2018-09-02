@@ -8,17 +8,17 @@ pipeline {
 stages{
         
         stage ('Init'){
-           powershell "echo testing...."
+           bat "powershell.exe echo testing...."
         }
 
         stage('Build'){
             
-            powershell "echo Building"
+            bat "powershell.exe echo Building"
             
         }
 
         stage ('Deployments'){
-           powershell 'echo Code deployed'
+           bat "powershell.exe echo Code deployed'
         }
     }
 }
