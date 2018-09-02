@@ -18,7 +18,7 @@ stages{
         }
 
         stage ('Deployments'){
-           bat "powershell.exe echo Code deployed'
+           bat "powershell.exe echo Code deployed"
         }
     }
 }
