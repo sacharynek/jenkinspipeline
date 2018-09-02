@@ -8,17 +8,17 @@ pipeline {
 stages{
         
         stage ('Init'){
-           echo "testing...."
+           powershell "echo testing...."
         }
 
         stage('Build'){
-            steps {
-                echo "Building"
-            }
+            
+            powershell "echo Building"
+            
         }
-        
+
         stage ('Deployments'){
-           echo 'Code deployed'
+           powershell 'echo Code deployed'
         }
     }
 }
